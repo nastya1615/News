@@ -36,7 +36,7 @@ def get_content(html):
             time.append(tim)
             name_of_news = new_item.find('h4').get_text()
             text.append(name_of_news)
-    get_json_from_link(name_of_news, content_from_news(link), link, time)
+    get_json_from_link(text, content_from_news(link), link, time)
 
 
 def content_from_news(link):
