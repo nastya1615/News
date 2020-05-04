@@ -50,7 +50,7 @@ def content_from_news(link):
             text = ''
             for item_str in item:
                 text += '\n' + item_str.get_text()
-                text_massive.append(text)
+            text_massive.append(text)
         except:
             text = "Читайте информацию по ссылке\n" + link[content]
             text_massive.append(text)
